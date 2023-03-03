@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media=" screen and (max-width : 700px)" href="phone.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+    <title>Website Design</title>
+</head>
+
+<body>
+    <section id="sub-header">
+        <nav>
+            <a href="index.html"> <img src="img/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="course.html">Courses</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login/Register</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1 class="h-primary">Our Certificates & Online Programs</h1>
+    </section>
+
+    <!-- ======Blog Page Content==== -->
+
+    <section id="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="img/certificate.jpg" alt="">
+                <h2>Our Certificates & Online Programs</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, architecto laborum excepturi cupiditate, sed, ullam exercitationem blanditiis laboriosam autem eaque illo non est. Nemo iste sed, distinctio unde temporibus quibusdam? Lorem ipsum dolor sit .</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque aliquid quas non veniam, eos facilis repudiandae corrupti dolore et assumenda. Repudiandae hic deserunt quae doloribus iure autem sint nulla alias adipisci, repellat ad unde. Culpa mollitia ipsa quos accusamus? Non sint ad, molestias sit qui inventore animi magni quas deserunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ratione Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, enim. Soluta assumenda quibusdam ullam natus voluptas quia, cumque consequatur itaque fugiat consequuntur quis nihil dolor placeat ex voluptatem, totam suscipit corrupti quasi blanditiis nam minus deleniti tempora ut! Vitae, quae?</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque aliquid quas non veniam, eos facilis repudiandae corrupti dolore et assumenda. Repudiandae hic deserunt quae doloribus iure autem sint nulla alias adipisci, repellat ad unde. Culpa mollitia ipsa quos accusamus? Non sint ad, molestias sit qui inventore animi magni quas deserunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ratione Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, in obcaecati? Sit eveniet aliquam maiores distinctio dolor corrupti, assumenda doloremque esse facere fuga voluptatem tempora architecto minima pariatur? Ullam assumenda autem architecto possimus nihil quas odio quis ad at quia.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque aliquid quas non veniam, eos facilis repudiandae corrupti dolore et assumenda. Repudiandae hic deserunt quae doloribus iure autem sint nulla alias adipisci, repellat ad unde. Culpa mollitia ipsa quos accusamus? Non sint ad, molestias sit qui inventore animi magni quas deserunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ratione Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, dolores.</p>
+
+                    <div class="comment-box">
+
+                        <h3>Leave A Comment</h3>
+
+                        <form action="backend.php" class="comment-form">
+                            <input type="text" placeholder="Enter Name">
+                            <input type="email" placeholder="Enter Email">
+                            <textarea rows="5" placeholder="Enter Message"></textarea>
+                            <button type="submit" class="btn blog-btn">Post Comment</button>
+                        </form>
+                    </div>
+
+
+            </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Assembly Language</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Data Structure</span>
+                    <span>18</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span>25</span>
+                </div>
+                <div>
+                    <span>Financial Accounting</span>
+                    <span>18</span>
+                </div>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>27</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ---------About Us ------- -->
+
+    <section id="about-us">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quae quaerat accusantium, <br> autem cupiditate dolorum.</p>
+
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+        </div>
+
+        <p>
+            Made with  <i class="fa fa-thin fa-heart"></i> by Easy Tutorial </i>
+        </p>
+    </section>
+
+
+    <!-- JAVASCRIPT TOGGLE MENU -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
